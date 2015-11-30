@@ -1,0 +1,11 @@
+rootProject.name = 'UNArbolApp'
+
+include ':app'
+include ':com.lwansbrough.ReactCamera'
+project(':com.lwansbrough.ReactCamera').projectDir = new File(settingsDir, '../node_modules/react-native-camera/android')
+include ':reacticonify', ':app'
+project(':reacticonify').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-iconify/app')
+include ':RNMaterialKit'
+project(':RNMaterialKit').projectDir = file('../node_modules/react-native-material-kit/android')
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
